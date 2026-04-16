@@ -1152,6 +1152,80 @@ $$\text{Score} = \vec{u} \cdot \vec{i} = (0.9 \times 0.8) + (0.1 \times 0.2) = 0
     section {
         display: flex;
         flex-direction: column;
+        padding: 40px;
+        padding-top: 110px;
+    }
+    h1.header-title {
+        position: absolute;
+        top: 30px;
+        left: 60px;
+        color: #3c70c6;
+        font-size: 35px;
+        margin: 0;
+    }
+    .ref-list {
+        margin-top: 10px;
+    }
+    .ref-item {
+        margin-bottom: 20px;
+        padding: 15px;
+        background: #fdfdfd;
+        border-radius: 8px;
+        border-left: 5px solid #3c70c6;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.03);
+    }
+    .ref-item b {
+        color: #333;
+        font-size: 22px;
+    }
+    .ref-item p {
+        margin: 5px 0 0 0;
+        font-size: 18px;
+        color: #666;
+        line-height: 1.4;
+    }
+    .link {
+        color: #3c70c6;
+        font-family: monospace;
+        font-size: 16px;
+        word-break: break-all;
+    }
+</style>
+
+<h1 class="header-title">Tài liệu tham khảo (References)</h1>
+
+<div class="ref-list">
+
+<div class="ref-item">
+        <b>[1] Matrix Factorization Techniques for Recommender Systems</b>
+        <p>Yehuda Koren, Robert Bell, Chris Volinsky. IEEE Computer Society, 2009.</p>
+    </div>
+
+<div class="ref-item">
+        <b>[2] Cornac: A Comparative Framework for Multimodal Recommender Systems</b>
+        <p>Preferred.AI. GitHub Repository & Documentation.</p>
+        <div class="link">https://github.com/PreferredAI/cornac</div>
+    </div>
+
+<div class="ref-item">
+        <b>[3] MovieLens Dataset</b>
+        <p>F. Maxwell Harper and Joseph A. Konstan. ACM Transactions on Interactive Intelligent Systems.</p>
+        <div class="link">https://grouplens.org/datasets/movielens/</div>
+    </div>
+
+<div class="ref-item">
+        <b>[4] Amazon.com Recommendations</b>
+        <p>Amazon.com Recommendations: Item-to-Item Collaborative Filtering</p>
+        <div class="link">https://github.com/wzhe06/Reco-papers/blob/master/Classic%20Recommender%20System/%5BCF%5D%20Amazon%20Recommendations%20Item-to-Item%20Collaborative%20Filtering%20%28Amazon%202003%29.pdf</div>
+    </div>
+
+</div>
+
+---
+<style scoped>
+    section {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
