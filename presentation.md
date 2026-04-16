@@ -244,7 +244,7 @@ td {
     }
 </style>
 
-<h1 class="header-title">1) Đặt vấn đề</h1>
+<h1 class="header-title"></h1>
 
 <div class="image-box">
 
@@ -315,7 +315,7 @@ Amazon.com
     }
 </style>
 
-<h1 class="header-title">1) Đặt vấn đề</h1>
+<h1 class="header-title"></h1>
 
 <div class="image-box">
 
@@ -386,7 +386,7 @@ Lazada.com
     }
 </style>
 
-<h1 class="header-title">1) Đặt vấn đề</h1>
+<h1 class="header-title"></h1>
 
 <div class="image-box">
 
@@ -810,7 +810,7 @@ taobao.com
     }
 </style>
 
-<h1 class="header-title">3) Quy trình: Training, Input & Output</h1>
+<h1 class="header-title">Quy trình: Training, Input & Output</h1>
 
 <div class="flow-container">
 
