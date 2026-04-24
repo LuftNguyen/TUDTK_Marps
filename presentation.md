@@ -110,6 +110,7 @@ td {
 3. **Bài toán:** Xác định Input, Output và mô hình dữ liệu.
 4. **Ứng dụng Đại số tuyến tính:** Vai trò của Đại số tuyến tính trong bài toán.
 5. **Kỹ thuật thực hiện:** Quy trình cài đặt thuật toán và đánh giá.
+6. **Phần kết**: Kết luận và hướng phát triển
 
 ---
 <style scoped>
@@ -254,7 +255,7 @@ td {
 <div class="text-box">
 
 ### 10,000 kết quả - "bag"
-Amazon.com
+*(Hình 1: Amazon.com)*
 
 </div>
 
@@ -324,8 +325,8 @@ Amazon.com
 
 <div class="text-box">
 
-### 4794 kết quả - "bag"
-Lazada.com
+### 4,794 kết quả - "bag"
+*(Hình 2: Lazada.com)*
 
 </div>
 
@@ -395,8 +396,8 @@ Lazada.com
 
 <div class="text-box">
 
-### 484449 kết quả - "bag"
-taobao.com
+### 484,449 kết quả - "bag"
+*(Hình 3: taobao.com)*
 
 </div>
 
@@ -483,7 +484,7 @@ taobao.com
 
 <img src="./images/ratematrix.png" class="matrix-image" alt="Ma trận thưa" />
 
-<p class="caption">Dựa trên những dữ liệu đã có -->  dự đoán các ô chưa có.</p>
+<p class="caption">(Hình 4: Dựa trên những dữ liệu đã có -->  dự đoán các ô chưa có.)</p>
 
 </div>
 
@@ -567,6 +568,25 @@ taobao.com
         margin-top: 20px !important; 
     }
 
+    .img-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px
+    }
+
+    .img-caption {
+        font-size: 16px; 
+        color: #666;    
+        font-style: italic;
+        margin-top: 5px
+    }
+
+    .case-card img {
+        margin-bottom: 5px !important; 
+    }
+
 </style>
 
 <h1 class="header-title">2) Thực tế</h1>
@@ -577,7 +597,10 @@ taobao.com
 
 <div class="case-studies">
     <div class="case-card amazon-card">
-        <img src="./images/cosine.png" alt="Cosine Similarity Formula" />
+    <div class="img-wrapper">
+            <img src="./images/cosine.png" alt="Cosine Similarity Formula" />
+            <span class="img-caption">(Hình 5: Công thức Cosine Similarity)</span>
+        </div>
         <p class="amazon-text"><b>Amazon:</b> Tiên phong dùng <i>Cosine Similarity</i> để tính sự tương đồng giữa các sản phẩm từ đó tìm ra các sản phẩm "mua cùng nhau".
         <br>
         <br>
@@ -585,7 +608,10 @@ taobao.com
         </p>
     </div>
     <div class="case-card youtube-card">
-        <img src="./images/youtube.png" class="youtube-img" alt="YouTube Deep Learning Model" />
+    <div class="img-wrapper">
+            <img src="./images/youtube.png" class="youtube-img" alt="YouTube Deep Learning Model" />
+            <span class="img-caption">(Hình 6: Kiến trúc Neural Network của YouTube)</span>
+        </div>
         <p><b>YouTube:</b> Sử dụng lớp <i>Softmax</i> để nhân vector người dùng <b>U</b> với ma trận video <b>V</b>, dự đoán hành vi xem tiếp theo.</p>
     </div>
 </div>
@@ -642,12 +668,22 @@ taobao.com
     strong {
         color: #3c70c6;
     }
+
+    figcaption {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+    margin-top: 10px;
+    }
 </style>
 
 <div class="image-container">
 
 ![w:1920](./images/netflix.png) 
 </div>
+
+<figcaption>(Hình 7: BellKor's Pragmatic Chaos tại Netflix Prize năm 2009)</figcaption>
 
 <div class="text-container">
 
@@ -656,6 +692,26 @@ taobao.com
 </p>
 
 </div>
+
+---
+
+<style scoped>
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    h1 {
+        font-size: 130px; 
+        color: #3c70c6; 
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+
+<h1>Hôm nay xem gì?</h1>
 
 ---
 <style scoped>
@@ -737,7 +793,7 @@ taobao.com
 <div class="image-box">
 
 ![w:500](./images/mf.png)
-*(Minh họa: Phân rã ma trận R thành U và V)*
+*(Hình 8: Minh họa phân rã ma trận R thành U và V)*
 
 </div>
 
@@ -815,7 +871,7 @@ taobao.com
 <div class="flow-container">
 
 <div class="column train-box">
-<h2>🏋️ Training</h2>
+<h2>📥 Training</h2>
         <ul>
             <li><b>UserID</b></li>
             <li><b>MovieID</b></li>
@@ -1031,9 +1087,9 @@ $$\text{Score} = \vec{u} \cdot \vec{i} = (0.9 \times 0.8) + (0.1 \times 0.2) = 0
 </div>
 
 <div class="decision-box">
-        <b>🚀 Kết luận:</b> Con số <b>0.74 (74%)</b> đủ cao để nhận diện sự tương quan lớn.
+        <b>Kết luận:</b> Con số <b>0.74 (74%)</b> đủ cao để nhận diện sự tương quan lớn.
         <br>
-        <b>👉 Hành động:</b> Đẩy phim <i>"Die Hard"</i> lên trang chủ cho A
+        <b>Hành động:</b> Đẩy phim <i>"Die Hard"</i> lên trang chủ cho A
     </div>
 
 </div>
@@ -1043,6 +1099,8 @@ $$\text{Score} = \vec{u} \cdot \vec{i} = (0.9 \times 0.8) + (0.1 \times 0.2) = 0
 * Ngược lại: Với "Titanic" $\vec{i}_{t} = \begin{bmatrix} 0.1 & 0.9 \end{bmatrix} \implies \text{Score} = 0.18$ (Không gợi ý).
 
 </p>
+
+
 
 ---
 <style scoped>
@@ -1163,6 +1221,76 @@ $$\text{Score} = \vec{u} \cdot \vec{i} = (0.9 \times 0.8) + (0.1 \times 0.2) = 0
         font-size: 35px;
         margin: 0;
     }
+    .content-wrapper {
+        display: flex;
+        gap: 30px;
+        margin-top: 10px;
+    }
+    .column {
+        flex: 1;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .conclusion-col {
+        background: #e3f2fd;
+        border-top: 8px solid #1e88e5;
+    }
+    .future-col {
+        background: #f1f8e9;
+        border-top: 8px solid #7cb342;
+    }
+    h2 {
+        color: #3c70c6;
+        font-size: 28px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    ul { font-size: 27px; line-height: 1.6; }
+    li { margin-bottom: 10px; }
+</style>
+
+<h1 class="header-title">6) Kết luận & Hướng phát triển</h1>
+
+<div class="content-wrapper">
+
+<div class="column conclusion-col">
+        <h2>📌 Kết luận</h2>
+        <ul>
+            <li><b>Đại số tuyến tính</b> là "xương sống" giúp máy tính hiểu được sở thích con người thông qua các con số.</li>
+            <li><b>Phân rã ma trận (SVD/SGD)</b> giải quyết triệt để bài toán dữ liệu thưa và gợi ý phim.</li>
+            <li>Độ chính xác cao, khả năng mở rộng tốt cho hệ thống thực tế.</li>
+        </ul>
+    </div>
+
+<div class="column future-col">
+        <h2>📌 Hướng phát triển</h2>
+        <ul>
+            <li><b>Hybrid System:</b> Kết hợp với lọc dựa trên nội dung <b>(Content-based)</b> hoặc lọc Cộng tác <b>(Collaborative Filtering)</b> để giải quyết "Cold Start".</li>
+            <li><b>Deep Learning:</b> Ứng dụng <b> Neural Networks</b> (như NCF) để học các đặc trưng phi tuyến tính phức tạp hơn.</li>
+            <li><b>Real-time:</b> Tối ưu hóa tốc độ tính toán để gợi ý ngay lập tức theo hành vi thực tế.</li>
+        </ul>
+    </div>
+
+</div>
+
+---
+<style scoped>
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        padding-top: 110px;
+    }
+    h1.header-title {
+        position: absolute;
+        top: 30px;
+        left: 60px;
+        color: #3c70c6;
+        font-size: 35px;
+        margin: 0;
+    }
     .ref-list {
         margin-top: 10px;
     }
@@ -1220,6 +1348,8 @@ $$\text{Score} = \vec{u} \cdot \vec{i} = (0.9 \times 0.8) + (0.1 \times 0.2) = 0
     </div>
 
 </div>
+
+
 
 ---
 <style scoped>
